@@ -7,6 +7,10 @@ Overview: Testing newly learnt wrapper function
 
 
 def my_decorator(func):
+    def wrapper(*args):
+        print(f"Doubling {str(args[0])} and tripling {str(args[1])}")
+        return func(args[0] * 2, args[1] * 3)
+    return wrapper
     pass
 
 
@@ -24,6 +28,7 @@ def divide(x, y):
 
 
 if __name__ == '__main__':
-    print(divide("Hello", "Hi"))
-    print(divide(17, 0))
     print(divide(12, 2))
+    print(divide(36, 4))
+    print(divide(12, 0))
+    print(divide(12, "hi"))
