@@ -1,0 +1,8 @@
+days_of_the_week,precipitation,new_snow
+Monday,0.21,0
+Tuesday,0.01,0
+Wednesday,0,0
+Thursday,0.01,0.1
+Friday,0.01,0.3
+Saturday,0,0
+Sunday,0,0
